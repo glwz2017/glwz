@@ -1,0 +1,215 @@
+@import "../css-function.less";
+@import "../public.less";
+@import "../../fonts/iconfont.css";
+@import "memberTop.less";
+@import "order-details.less";
+
+.order-main .box-r {
+  padding-top: 40px;
+}
+
+/*选项卡展示*/
+.pay-shows {
+  width: 1080px;
+  height: 100px;
+  margin-top: 30px;
+
+  li {
+    width: 216px;
+    border: 1px solid #d3d3d3;
+    height: 100px;
+    float: left;
+    border-right: none;
+    background-color: #e5e5e5;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 12px;
+
+    .line-pic {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.order-progress {
+  width: 1080px;
+  margin-top: 44px;
+  height: 120px;
+  background-color: #f7f8f8;
+  border: 1px solid #efefef;
+  padding: 30px 30px 0 30px;
+  box-sizing: border-box;
+
+  .progress-text {
+    display: inline-block;
+    float: left;
+  }
+
+  .invi-btn {
+    float: right;
+    padding-top: 20px;
+
+    a {
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #ffffff;
+      border-radius: 2px;
+      margin-right: 15px;
+      background-color: #826c6c;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.26);
+    }
+  }
+}
+
+/*物流盒子*/
+.logistics-box {
+  width: 1080px;
+  height: 118px;
+  background-color: #f7f8f8;
+  border: 1px solid #efefef;
+  padding: 35px 30px 0 35px;
+  box-sizing: border-box;
+
+  .logistics-ul {
+    height: 60px;
+
+    li {
+      float: left;
+      height: 60px;
+      width: 17%;
+
+      p {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    }
+
+    .logistics-tips {
+      width: 49%;
+      font-size: 12px;
+      color: #fdbb2d;
+      padding-top: 15px;
+    }
+  }
+}
+
+.ship-box {
+  width: 1080px;
+}
+
+/*地址*/
+.delivery-ress {
+  margin: 18px 0 18px 0;
+  font-family: fontBold;
+  width: 1080px;
+  font-size: 16px;
+}
+
+.delivery-box {
+  background-image: url("../../images/order/border-pic .png");
+  background-repeat: no-repeat;
+  width: 1080px;
+  height: 200px;
+  padding: 34px 0 0 30px;
+  box-sizing: border-box;
+
+  dl {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #2e2525;
+    margin-bottom: 5px;
+  }
+
+  dt {
+    margin-right: 20px;
+    min-width: 60px;
+    float: left;
+  }
+
+  dd {
+    float: left;
+  }
+}
+
+/*总计盒子*/
+.product-titles {
+  width: 1080px;
+}
+
+.ui-window-bd {
+  padding: 30px 80px 30px 30px;
+  width: 1080px;
+  border: 1px solid @colorefeff0;
+  margin-top: -1px;
+
+  .info-item {
+    margin-bottom: 0;
+  }
+
+  .info-title {
+    border: 1px solid @colorefeff0;
+    border-bottom: none;
+  }
+
+  .info-detail {
+    margin: -1px 0 0 0;
+  }
+}
+
+.total-box {
+  width: 1080px;
+  padding: 30px 80px 30px 30px;
+  border: 1px solid @colorefeff0;
+  margin-top: -1px;
+
+  .total-ul {
+    background-color: #f7f8f8;
+    border: 1px solid #efefef;
+    .clearF;
+
+    li {
+      float: left;
+      width: 193px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #efefef;
+      font-size: 12px;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  .total-ol {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    margin-top: -1px;
+
+    .clearF;
+
+    li {
+      width: 193px;
+      height: 54px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.ui-window-bd {
+  .title-flag {
+    font-family: fontBold;
+  }
+}
