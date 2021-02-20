@@ -597,7 +597,8 @@ $(function () {
         <div class="copyright-box">
           <div class="copyright-text">
             <div class="ban-quan">
-              Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+              Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. 
+              <br>Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
             </div>
             <div class="link-way">
               <span>Whatsapp +8618665922549</span>
