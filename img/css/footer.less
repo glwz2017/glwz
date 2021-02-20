@@ -1,129 +1,95 @@
 @import "css-function.less";
+@import "components/basic-color.less";
+
+@color4d4d4d: #4d4d4d;
+@color9a9b9b: #9a9b9b;
+@color282828: #282828;
+@color272727: #272727;
+@color9fa0a0: #9fa0a0;
+
 /*底部*/
 .footer {
-  background-color: #313131;
+  background-color: @color313131;
   width: 100%;
   min-width: 1280px;
-  .clearF;
 
-}
+  //赞助商
+  .sponsors {
+    background: #fff;
+    min-height: 100px;
+    border-top:1px solid @colorEfefef;
 
-.links-type {
-  .clearF;
-}
+    .sponsors-box {
+      width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      box-sizing: border-box;
+      .clearF;
 
-.links-title {
-  .widthAndHeight(960px, 200px);
-  padding-top: 40px;
-  box-sizing: border-box;
-  .clearF;
-
-  & > li {
-    float: left;
-    min-height: 156px;
-
-    &:first-child {
-      width: 228px;
-
-      & + li {
-        width: 250px;
-        border-left: 1px solid #272727;
-        padding-left: 20px;
+      .item {
+        padding: 15px 0 14px 35px;
         box-sizing: border-box;
-
-        & + li {
-          width: 250px;
-          border-left: 1px solid #272727;
-          padding-left: 20px;
-          box-sizing: border-box;
-
-          & + li {
-            width: 228px;
-            border-left: 1px solid #272727;
-            padding-left: 20px;
-            box-sizing: border-box;
+        float: left;
+        position: relative;
+        &:first-child{
+          &:before{
+            display: none;
           }
         }
-      }
-    }
+        &:before{
+          display: block;
+          content: '';
+          height: 66%;
+          .positionL(absolute,50%,0,1);
+          border-left: 1px solid @colorEfefef;
+          transform: translateY(-50%);
+        }
 
-    & > p {
-      margin-bottom: 20px;
-      color: #fff;
-      font-size: 16px;
-    }
-  }
-
-  .links-lists {
-    line-height: 20px;
-    font-size: 12px;
-
-    & > li {
-      h3 {
-        font-weight: normal;
-      }
-
-      a {
-        color: #9fa0a0;
-
-        &:hover {
-          text-decoration: underline;
+        &:last-child {
+          float: right;
+          margin-right: 10px;
+          cursor: pointer;
         }
       }
-    }
-  }
-}
 
-.footer-item-icon {
-  margin-top: 44px;
-  color: #9fa0a0;
-
-  & > li {
-    float: left;
-    margin-right: 10px;
-
-    .name {
-      margin-bottom: 6px;
-    }
-
-    .img {
-      .heightAndLineHeight(40px, 40px);
-      padding: 0 10px;
-      background-color: #fff;
-      display: table-cell;
-      vertical-align: middle;
-
-      img {
-        display: block;
+      .name {
+        font-size: 14px;
+        color: @color313131;
+        position: relative;
       }
-    }
-
-    &:first-child + li + li {
-      cursor: pointer;
     }
   }
 
   .clearF;
+  .links-type {
+    padding: 40px 0;
+    .clearF;
+  }
 }
 
-/*右侧表单*/
+/*左侧表单*/
 .send-from {
-  .widthAndHeight(300px, auto);
-  float: right;
-  padding-top: 40px;
+  .widthAndHeight(320px, auto);
+  float: left;
   box-sizing: border-box;
-  padding-left: 50px;
+  padding-left: 24px;
+  border-right: 1px solid @color282828;
 
   & > p {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
 
+  .message-from {
+    width: 240px;
+  }
+
   input[type="text"] {
-    .widthAndHeight(100%, 40px);
-    color: #9a9b9b;
-    line-height: 40px;
+    .widthAndHeight(100%, 30px);
+    color: @color9a9b9b;
+    background: @color4d4d4d;
+    line-height: 30px;
     border-radius: 2px;
     text-indent: 15px;
     text-align: left;
@@ -134,76 +100,126 @@
   textarea {
     .widthAndHeight(100%, 70px);
     border-radius: 2px;
-    color: #9a9b9b;
+    color: @color9a9b9b;
+    background: @color4d4d4d;
     cursor: pointer;
     resize: none;
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: 'myfont', 'Arial' !important;
+    border: none;
+    font-family: open-sans;
   }
 
   input[type="button"] {
-    .widthAndHeight(100%, 40px);
+    .widthAndHeight(100%, 34px);
     color: #fff;
-    line-height: 40px;
+    line-height: 34px;
     border-radius: 2px;
     text-indent: 15px;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
+    font-size: 12px;
     margin-top: 15px;
-    background: url(../images/rightzx.png) 210px center no-repeat #b21f1f;
+    background: @colorRedB21f1f;
   }
 
   input[type="button"]:hover {
-    background: url(../images/rightedzx.png) 210px center no-repeat #e22222;
+    background: #e22222;
   }
 
   textarea::-webkit-input-placeholder {
-    color: #9a9b9b;
+    color: @color9a9b9b;
   }
 
   textarea::-moz-placeholder {
-    color: #9a9b9b;
+    color: @color9a9b9b;
   }
 
   textarea::-moz-placeholder {
-    color: #9a9b9b;
+    color: @color9a9b9b;
   }
 
   textarea:-ms-input-placeholder {
-    color: #9a9b9b;
+    color: @color9a9b9b;
   }
 }
-
-/*右侧表单*/
-.footer-from {
-  margin-top: 30px;
-
-  .clearF;
-
-  .container_warp {
-    padding: 20px 0 40px;
-    border-top: 1px solid #272727;
+//右侧导航
+.list-box {
+  float: right;
+  .links-title {
+    .widthAndHeight(960px, auto);
+    padding-bottom: 20px;
+    box-sizing: border-box;
     .clearF;
-  }
 
-  .left-item {
-    float: left;
-    color: #9fa0a0;
-    font-size: 12px;
+    & > li {
+      float: left;
+      min-height: 156px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      border-left: 1px solid #272727;
 
-    .link-way {
-      margin-top: 10px;
+      &:first-child {
+        width: 228px;
+        padding-left: 40px;
+        border-left: none;
 
-      span {
-        margin-right: 10px;
+        & + li {
+          width: 250px;
+
+          & + li {
+            width: 250px;
+
+            & + li {
+              width: 228px;
+            }
+          }
+        }
+      }
+
+      & > p {
+        margin-bottom: 15px;
+        color: #fff;
+        font-size: 16px;
       }
     }
-  }
 
-  .right-item {
-    float: right;
+    .links-lists {
+      line-height: 20px;
+      font-size: 12px;
+
+      & > li {
+        h3 {
+          font-weight: normal;
+        }
+
+        a {
+          color: #9fa0a0;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+  }
+  .copyright-box {
+    border-top: 1px solid @color282828;
+    margin-left: 40px;
+    padding-top: 15px;
+    .clearF;
+
+    .copyright-text {
+      float: left;
+      color: @color9fa0a0;
+      max-width: 740px;
+      cursor: default;
+      .ban-quan{
+        margin-bottom: 10px;
+      }
+    }
 
     .share-box {
       height: 30px;
@@ -231,3 +247,5 @@
     }
   }
 }
+
+
