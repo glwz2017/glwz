@@ -512,90 +512,88 @@ $(function () {
       </div>
       <!--右侧导航-->
       <div class="list-box">
-        <ul class="links-title">
-          <li>
-            <p>LEARN</p>
-            <ul class="links-lists">
-              <li>
-                <h3><a href="aboutUs.html">About Us</a></h3>
-              </li>
-              <li>
-                <h3><a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB
-                  Capabilities</a></h3>
-              </li>
-              <li>
-                <a href="pcbaCapabilities.html">PCBA Capabilities</a>
-              </li>
-              <li>
-                <a href="https://www.pcbgogo.com/Blog/Big_sales_on_PCB_mass_production.html"> PCB Layout
-                  Capabilities</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>PCBGOGO SERVICE</p>
-            <ul class="links-lists">
-              <li>
-                <a href="PCBPrototype.html">PCB Prototype </a>
-              </li>
-              <li>
-                <a href="PCBAssembly.html">PCB Assembly</a>
-              </li>
-              <li>
-                <a href="pcbLayout.html"> PCB Layout </a>
-              </li>
-              <li>
-                <a href="FPCInstantQuote.html">PCB Instant Quote</a>
-              </li>
-              <li>
-                <a href="sitemap.xml" title="https://www.pcbgogo.com/sitemap(1).xml">Site Map</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>CUSTOMER SUPPORT</p>
-            <ul class="links-lists">
-              <li>
-                <a href="forum/forum.html">Engineering </a>
-              </li>
-              <li>
-                <a href="forum/dynamic.html">Feedback </a>
-              </li>
-              <li>
-                <a href="old-process/pcbaAssemblyFaq.html">PCBA FAQs </a>
-              </li>
-              <li>
-                <a href="whyUs.html">Why us </a>
-              </li>
-              <li>
-                <a href="privacyPolicy.html">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="pages作废/keywordSearch作废.html">PCB Glossary</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>ORDER HELP</p>
-            <ul class="links-lists">
-              <li>
-                <a href="orderGuide.html">Order Guide </a>
-              </li>
-              <li>
-                <a href="contactUs.html">Contact Us </a>
-              </li>
-              <li>
-                <a href="register-login.html">Create an Account </a>
-              </li>
-              <li>
-                <a href="qualityGurrantee.html">Quality Gurrantee </a>
-              </li>
-              <li>
-                <a href="gogoDelivery.html">PCBGOGO Delivery</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+       <ul class="links-title">
+                    <li>
+                        <p>CAPABILITIES</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3><a href="/about-us.html">About Us</a></h3>
+                            </li>
+                            <li>
+                                    <h3><a href="/Capabilities/Standard_PCB_Capabilities.html"> PCB Capabilities</a></h3>
+                            </li>
+                            <li>
+                                    <h3><a href="/Capabilities/PCBA_Capabilties.html"> PCBA Capabilities</a></h3>
+                            </li>
+                            <li>
+                                    <h3><a href="/Capabilities/PCB_Design_and_Layout.html"> PCB Layout Capabilities</a></h3>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <p>PCBGOGO SERVICE
+</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3><a href="/pcb-fabrication-quote.html">PCB Prototype </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/pcb-assembly.html">PCB Assembly</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/pcblayout.html"> PCB Layout </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/pcb-fabrication-quote.html">PCB Instant Quote</a></h3>
+                            </li>
+                            <!--<li>-->
+                            <!--<a href="/网站地图">Site Map</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <p>CUSTOMER SUPPORT</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3><a href="/forum.html">Blog</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/Feedback/">Feedback </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/Capabilities/Files_Requested_for_PCBA.html">Files Requested for PCBA </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/why.html">Why Us </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/privacy_policy.html">Privacy Policy </a></h3>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ORDER HELP</p>
+                        <ul class="links-lists">
+                            <li>
+                                <h3><a href="/orderguide.html">Order Guide </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/contact.html">Contact Us </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/member/login">Create an Account </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/quality_gurrantee.html">Quality Gurrantee </a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="/delivery.html">PCBGOGO Delivery</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
         <div class="copyright-box">
           <div class="copyright-text">
             <div class="ban-quan">
