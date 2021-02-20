@@ -22,7 +22,6 @@
     .sponsors-box {
       width: 1280px;
       margin: 0 auto;
-      padding: 0 24px;
       box-sizing: border-box;
       .clearF;
 
@@ -31,10 +30,15 @@
         box-sizing: border-box;
         float: left;
         position: relative;
+        width: 25%;
         &:first-child{
+          padding-left: 0;
           &:before{
             display: none;
           }
+        }
+        &:nth-child(2){
+          width: 37.5%;
         }
         &:before{
           display: block;
@@ -46,7 +50,6 @@
         }
 
         &:last-child {
-          float: right;
           margin-right: 10px;
           cursor: pointer;
         }
@@ -72,7 +75,6 @@
   .widthAndHeight(320px, auto);
   float: left;
   box-sizing: border-box;
-  padding-left: 24px;
   border-right: 1px solid @color282828;
 
   & > p {
@@ -108,7 +110,11 @@
     box-sizing: border-box;
     font-size: 14px;
     border: none;
+    overflow: auto;
     font-family: open-sans;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   input[type="button"] {
@@ -216,9 +222,6 @@
       color: @color9fa0a0;
       max-width: 740px;
       cursor: default;
-      .ban-quan{
-        margin-bottom: 10px;
-      }
     }
 
     .share-box {

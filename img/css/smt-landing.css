@@ -992,7 +992,6 @@ button {
 .footer .sponsors .sponsors-box {
   width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
   box-sizing: border-box;
 }
 .footer .sponsors .sponsors-box:after {
@@ -1007,9 +1006,16 @@ button {
   box-sizing: border-box;
   float: left;
   position: relative;
+  width: 25%;
+}
+.footer .sponsors .sponsors-box .item:first-child {
+  padding-left: 0;
 }
 .footer .sponsors .sponsors-box .item:first-child:before {
   display: none;
+}
+.footer .sponsors .sponsors-box .item:nth-child(2) {
+  width: 37.5%;
 }
 .footer .sponsors .sponsors-box .item:before {
   display: block;
@@ -1023,7 +1029,6 @@ button {
   transform: translateY(-50%);
 }
 .footer .sponsors .sponsors-box .item:last-child {
-  float: right;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -1055,7 +1060,6 @@ button {
   height: auto;
   float: left;
   box-sizing: border-box;
-  padding-left: 24px;
   border-right: 1px solid #282828;
 }
 .send-from > p {
@@ -1090,7 +1094,11 @@ button {
   box-sizing: border-box;
   font-size: 14px;
   border: none;
+  overflow: auto;
   font-family: open-sans;
+}
+.send-from textarea::-webkit-scrollbar {
+  display: none;
 }
 .send-from input[type="button"] {
   width: 100%;
@@ -1192,9 +1200,6 @@ button {
   color: #9fa0a0;
   max-width: 740px;
   cursor: default;
-}
-.list-box .copyright-box .copyright-text .ban-quan {
-  margin-bottom: 10px;
 }
 .list-box .copyright-box .share-box {
   height: 30px;

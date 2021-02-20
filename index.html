@@ -1943,7 +1943,9 @@ $(function () {
         <div class="copyright-box">
           <div class="copyright-text">
             <div class="ban-quan">
-              Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+              Copyright © 2020 PCBGOGO. All rights reserved.
+              <br>Shenzhen JDB Technology Co.,Ltd.
+              Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
             </div>
             <div class="link-way">
               <span>Whatsapp +8618665922549</span>
@@ -1992,10 +1994,29 @@ $(function () {
 <script>
 $(function () {
   // 介绍指示
-  $('.js-us-info li').hover(function () {
-    $(this).addClass('active').siblings('li').removeClass('active')
-    $('.js-bg-box .bg-item').hide().eq($(this).index()).fadeIn()
-  }, function () {})
+
+  (function () {
+    var tabIndex = 2, timer = null,
+      interval = 4000, len = $('.js-us-info li').length - 1
+    function changeFn () {
+      tabIndex++
+      if (tabIndex > len) {
+        tabIndex = 0
+      }
+      $('.js-us-info li').removeClass('active').eq(tabIndex).addClass('active')
+      $('.js-bg-box .bg-item').hide().eq(tabIndex).fadeIn()
+    }
+    timer = setInterval(changeFn, interval)
+    $('.js-us-info li').mouseenter(function () {
+      clearInterval(timer)
+      tabIndex = $(this).index()
+      $(this).addClass('active').siblings('li').removeClass('active')
+      $('.js-bg-box .bg-item').hide().eq($(this).index()).fadeIn()
+    })
+    $('.js-us-info li').mouseleave(function () {
+      timer = setInterval(changeFn, interval)
+    })
+  })()
 
   // 表单新闻链接提示
   // void function () {
