@@ -1839,21 +1839,6 @@ $(function () {
   <!--二级列表-->
   <div class="links-type ">
     <div class="container_warp">
-      <!--左侧表单-->
-      <div class="send-from">
-        <p>QUICK CONTACT</p>
-        <form action="#" class="message-from">
-          <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
-                 onblur="if(this.value==='')this.value='Name'">
-          <input type="text" placeholder="Email" value="Email"
-                 onfocus="if(this.value==='Email')this.value=''"
-                 onblur="if(this.value==='')this.value='Email'">
-          <textarea type="text" class="message-input" placeholder="Message"
-                    onfocus="if(this.value==='Message')this.value=''"
-                    onblur="if(this.value==='')this.value='Message'"></textarea>
-          <input type="button" class="btn-submit " value="Send Message">
-        </form>
-      </div>
       <!--右侧导航-->
       <div class="list-box">
         <ul class="links-title">
@@ -1938,22 +1923,15 @@ $(function () {
             </ul>
           </li>
         </ul>
-        <div class="copyright-box">
-          <div class="copyright-text">
-            <div class="ban-quan">
-              Copyright © 2020 PCBGOGO. All rights reserved.
-              <br>Shenzhen JDB Technology Co.,Ltd.
-              Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
-            </div>
-            <div class="link-way">
-              <span>Whatsapp +8618665922549</span>
+        <div class="link-box">
+          <div class="link-way">
+              <span class="app">
+                Whatsapp +8618665922549</span>
 
-              <span> Mail service@pcbgogo.com</span>
+            <span class="mail"> Mail service@pcbgogo.com</span>
 
-              <span> Tel +86-755-33066136</span>
-            </div>
+            <span class="tel"> Tel +86-755-33066136</span>
           </div>
-
           <div class="share-box">
             <a target="_blank" href="https://twitter.com/PCBGOGOofficial"><img
               src="img/images/twitter.png" alt=""></a>
@@ -1969,7 +1947,28 @@ $(function () {
           </div>
         </div>
       </div>
+      <!--左侧表单-->
+      <div class="send-from">
+        <p>QUICK CONTACT</p>
+        <form action="#" class="message-from">
+          <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                 onblur="if(this.value==='')this.value='Name'">
+          <input type="text" placeholder="Email" value="Email"
+                 onfocus="if(this.value==='Email')this.value=''"
+                 onblur="if(this.value==='')this.value='Email'">
+          <textarea type="text" class="message-input" placeholder="Message"
+                    onfocus="if(this.value==='Message')this.value=''"
+                    onblur="if(this.value==='')this.value='Message'"></textarea>
+          <input type="button" class="btn-submit " value="Send Message">
+        </form>
+      </div>
     </div>
+  </div>
+  <!--  版权-->
+  <div class="copyright-box">
+    <div class="container_warp">
+    Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+  </div>
   </div>
 </div>
 <!--PC跳转手机-->
@@ -1996,6 +1995,7 @@ $(function () {
   (function () {
     var tabIndex = 2, timer = null,
       interval = 4000, len = $('.js-us-info li').length - 1
+
     function changeFn () {
       tabIndex++
       if (tabIndex > len) {
@@ -2004,6 +2004,7 @@ $(function () {
       $('.js-us-info li').removeClass('active').eq(tabIndex).addClass('active')
       $('.js-bg-box .bg-item').hide().eq(tabIndex).fadeIn()
     }
+
     timer = setInterval(changeFn, interval)
     $('.js-us-info li').mouseenter(function () {
       clearInterval(timer)

@@ -495,120 +495,99 @@ $(function () {
   <!--二级列表-->
   <div class="links-type ">
     <div class="container_warp">
-      <!--左侧表单-->
-      <div class="send-from">
-        <p>QUICK CONTACT</p>
-        <form action="#" class="message-from">
-          <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
-                 onblur="if(this.value==='')this.value='Name'">
-          <input type="text" placeholder="Email" value="Email"
-                 onfocus="if(this.value==='Email')this.value=''"
-                 onblur="if(this.value==='')this.value='Email'">
-          <textarea type="text" class="message-input" placeholder="Message"
-                    onfocus="if(this.value==='Message')this.value=''"
-                    onblur="if(this.value==='')this.value='Message'"></textarea>
-          <input type="button" class="btn-submit " value="Send Message">
-        </form>
-      </div>
       <!--右侧导航-->
       <div class="list-box">
-       <ul class="links-title">
-                    <li>
-                        <p>CAPABILITIES</p>
-                        <ul class="links-lists">
-                            <li>
-                                <h3><a href="/about-us.html">About Us</a></h3>
-                            </li>
-                            <li>
-                                    <h3><a href="/Capabilities/Standard_PCB_Capabilities.html"> PCB Capabilities</a></h3>
-                            </li>
-                            <li>
-                                    <h3><a href="/Capabilities/PCBA_Capabilties.html"> PCBA Capabilities</a></h3>
-                            </li>
-                            <li>
-                                    <h3><a href="/Capabilities/PCB_Design_and_Layout.html"> PCB Layout Capabilities</a></h3>
-                            </li>
+        <ul class="links-title">
+          <li>
+            <p>CAPABILITIES</p>
+            <ul class="links-lists">
+              <li>
+                <h3><a href="/about-us.html">About Us</a></h3>
+              </li>
+              <li>
+                <h3><a href="/Capabilities/Standard_PCB_Capabilities.html"> PCB Capabilities</a></h3>
+              </li>
+              <li>
+                <h3><a href="/Capabilities/PCBA_Capabilties.html"> PCBA Capabilities</a></h3>
+              </li>
+              <li>
+                <h3><a href="/Capabilities/PCB_Design_and_Layout.html"> PCB Layout Capabilities</a></h3>
+              </li>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <p>PCBGOGO SERVICE
-</p>
-                        <ul class="links-lists">
-                            <li>
-                                <h3><a href="/pcb-fabrication-quote.html">PCB Prototype </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/pcb-assembly.html">PCB Assembly</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/pcblayout.html"> PCB Layout </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/pcb-fabrication-quote.html">PCB Instant Quote</a></h3>
-                            </li>
-                            <!--<li>-->
-                            <!--<a href="/网站地图">Site Map</a>-->
-                            <!--</li>-->
-                        </ul>
-                    </li>
-                    <li>
-                        <p>CUSTOMER SUPPORT</p>
-                        <ul class="links-lists">
-                            <li>
-                                <h3><a href="/forum.html">Blog</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/Feedback/">Feedback </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/Capabilities/Files_Requested_for_PCBA.html">Files Requested for PCBA </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/why.html">Why Us </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/privacy_policy.html">Privacy Policy </a></h3>
-                            </li>
-                            
-                        </ul>
-                    </li>
-                    <li>
-                        <p>ORDER HELP</p>
-                        <ul class="links-lists">
-                            <li>
-                                <h3><a href="/orderguide.html">Order Guide </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/contact.html">Contact Us </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/member/login">Create an Account </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/quality_gurrantee.html">Quality Gurrantee </a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="/delivery.html">PCBGOGO Delivery</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-        <div class="copyright-box">
-          <div class="copyright-text">
-            <div class="ban-quan">
-              Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. 
-              <br>Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
-            </div>
-            <div class="link-way">
-              <span>Whatsapp +8618665922549</span>
+            </ul>
+          </li>
+          <li>
+            <p>PCBGOGO SERVICE
+            </p>
+            <ul class="links-lists">
+              <li>
+                <h3><a href="/pcb-fabrication-quote.html">PCB Prototype </a></h3>
+              </li>
+              <li>
+                <h3><a href="/pcb-assembly.html">PCB Assembly</a></h3>
+              </li>
+              <li>
+                <h3><a href="/pcblayout.html"> PCB Layout </a></h3>
+              </li>
+              <li>
+                <h3><a href="/pcb-fabrication-quote.html">PCB Instant Quote</a></h3>
+              </li>
+              <!--<li>-->
+              <!--<a href="/网站地图">Site Map</a>-->
+              <!--</li>-->
+            </ul>
+          </li>
+          <li>
+            <p>CUSTOMER SUPPORT</p>
+            <ul class="links-lists">
+              <li>
+                <h3><a href="/forum.html">Blog</a></h3>
+              </li>
+              <li>
+                <h3><a href="/Feedback/">Feedback </a></h3>
+              </li>
+              <li>
+                <h3><a href="/Capabilities/Files_Requested_for_PCBA.html">Files Requested for PCBA </a></h3>
+              </li>
+              <li>
+                <h3><a href="/why.html">Why Us </a></h3>
+              </li>
+              <li>
+                <h3><a href="/privacy_policy.html">Privacy Policy </a></h3>
+              </li>
 
-              <span> Mail service@pcbgogo.com</span>
+            </ul>
+          </li>
+          <li>
+            <p>ORDER HELP</p>
+            <ul class="links-lists">
+              <li>
+                <h3><a href="/orderguide.html">Order Guide </a></h3>
+              </li>
+              <li>
+                <h3><a href="/contact.html">Contact Us </a></h3>
+              </li>
+              <li>
+                <h3><a href="/member/login">Create an Account </a></h3>
+              </li>
+              <li>
+                <h3><a href="/quality_gurrantee.html">Quality Gurrantee </a></h3>
+              </li>
+              <li>
+                <h3><a href="/delivery.html">PCBGOGO Delivery</a></h3>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="link-box">
+          <div class="link-way">
+              <span class="app">
+                Whatsapp +8618665922549</span>
 
-              <span> Tel +86-755-33066136</span>
-            </div>
+            <span class="mail"> Mail service@pcbgogo.com</span>
+
+            <span class="tel"> Tel +86-755-33066136</span>
           </div>
-
           <div class="share-box">
             <a target="_blank" href="https://twitter.com/PCBGOGOofficial"><img
               src="img/images/twitter.png" alt=""></a>
@@ -624,7 +603,28 @@ $(function () {
           </div>
         </div>
       </div>
+      <!--左侧表单-->
+      <div class="send-from">
+        <p>QUICK CONTACT</p>
+        <form action="#" class="message-from">
+          <input type="text" placeholder="Name" value="Name" onfocus="if(this.value==='Name')this.value=''"
+                 onblur="if(this.value==='')this.value='Name'">
+          <input type="text" placeholder="Email" value="Email"
+                 onfocus="if(this.value==='Email')this.value=''"
+                 onblur="if(this.value==='')this.value='Email'">
+          <textarea type="text" class="message-input" placeholder="Message"
+                    onfocus="if(this.value==='Message')this.value=''"
+                    onblur="if(this.value==='')this.value='Message'"></textarea>
+          <input type="button" class="btn-submit " value="Send Message">
+        </form>
+      </div>
     </div>
+  </div>
+  <!--  版权-->
+  <div class="copyright-box">
+    <div class="container_warp">
+    Copyright © 2020 PCBGOGO. All rights reserved. Shenzhen JDB Technology Co.,Ltd. Address: No. 15, Zhongxing Road, Kengzi Street, Pingshan District, Shenzhen, 518000, China.
+  </div>
   </div>`
       return totalFooter
     }
