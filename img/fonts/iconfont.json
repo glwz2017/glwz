@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "7340028",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "10593771",
+      "name": "邮件,邮箱_jurassic",
+      "font_class": "jurassic_email",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "15685671",
+      "name": "手机",
+      "font_class": "shouji2",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
       "icon_id": "9512532",
       "name": "叉",
       "font_class": "cross",
