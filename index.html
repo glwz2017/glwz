@@ -958,14 +958,19 @@ $(function () {
                 <div class="des">
                   2021 PRICE ADJUSTMENT NOTIFICAITON1
                 </div>
+                <div class="time">
+                  Feb 03.2020, 23:44:51
+                </div>
               </dd>
               <dd onclick="window.open('给我一个地址')">
                 <span>
                   News
                 </span>
                 <div class="des">
-                  2021 PRICE ADJUSTMENT NOTIFICAITON2
-                  2021 PRICE ADJUSTMENT NOTIFICAITON2
+                  2021 PRICE
+                </div>
+                <div class="time">
+                  Feb 03.2020, 23:44:52
                 </div>
               </dd>
               <dd onclick="window.open('给我一个地址')">
@@ -975,6 +980,9 @@ $(function () {
                 <div class="des">
                   2021 PRICE ADJUSTMENT NOTIFICAITON3
                   2021 PRICE ADJUSTMENT NOTIFICAITON3
+                </div>
+                <div class="time">
+                  Feb 03.2020, 23:44:53
                 </div>
               </dd>
             </dl>
@@ -2021,19 +2029,19 @@ $(function () {
   })()
 
   // 表单新闻链接提示
-  // void function () {
-  //   setInterval(function () {
-  //     var current = $('.js-roll-box dd')
-  //     var height=current.eq(0).height()
-  //     var getprice = $('.js-roll-box')
-  //     getprice.animate({ marginTop: -height }, 'slow', function () {
-  //       var data = current.eq(0).clone()
-  //       current.eq(0).remove()
-  //       getprice.css({ marginTop: 0 })
-  //       getprice.append(data)
-  //     })
-  //   }, 4000)
-  // }()
+  void function () {
+    setInterval(function () {
+      var current = $('.js-roll-box dd')
+      var height=current.eq(0).height()
+      var getprice = $('.js-roll-box')
+      getprice.animate({ marginTop: -height }, 'slow', function () {
+        var data = current.eq(0).clone()
+        current.eq(0).remove()
+        getprice.css({ marginTop: 0 })
+        getprice.append(data)
+      })
+    }, 4000)
+  }()
   /////图片懒加载
   $('img').lazyload({
     threshold: 200,

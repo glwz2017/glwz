@@ -1781,20 +1781,20 @@ button {
   text-align: center;
 }
 .rolling-box {
-  margin-top: 10px;
+  margin-top: 8px;
   height: 90px;
   border-top: 1px solid #e8e8e8;
-  padding-top: 20px;
+  padding-top: 15px;
   box-sizing: border-box;
 }
 .rolling-box .roll-mask {
-  height: 36px;
+  height: 60px;
   overflow: hidden;
 }
 .rolling-box .roll-mask dd {
   color: #2e2525;
   font-size: 14px;
-  height: 36px;
+  height: 60px;
 }
 .rolling-box .roll-mask dd:after {
   display: block;
@@ -1811,9 +1811,8 @@ button {
   font-weight: bold;
 }
 .rolling-box .roll-mask .des {
-  float: left;
-  width: 258px;
-  height: 36px;
+  width: 300px;
+  max-height: 36px;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1823,6 +1822,11 @@ button {
 }
 .rolling-box .roll-mask .des:hover {
   text-decoration: underline;
+}
+.rolling-box .roll-mask .time {
+  margin-left: 45px;
+  font-size: 12px;
+  color: #727171;
 }
 .item-box:nth-child(2) .btn-box {
   height: 50px;

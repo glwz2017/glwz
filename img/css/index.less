@@ -360,21 +360,21 @@
 }
 
 .rolling-box {
-  margin-top: 10px;
+  margin-top: 8px;
   height: 90px;
   border-top: 1px solid @colore8e8e8;
-  padding-top: 20px;
+  padding-top: 15px;
   box-sizing: border-box;
 
   .roll-mask {
-    height: 36px;
+    height: 60px;
     overflow: hidden;
 
     dd {
       .clear-fix;
       color: @color2e2525;
       font-size: 14px;
-      height: 36px;
+      height: 60px;
     }
 
     span {
@@ -386,9 +386,8 @@
     }
 
     .des {
-      float: left;
-      width: 258px;
-      height: 36px;
+      width: 300px;
+      max-height: 36px;
       cursor: pointer;
       overflow: hidden;
       .moreTextEellipsis(2);
@@ -396,6 +395,11 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+    .time{
+      margin-left: 45px;
+      font-size: 12px;
+      color: @color727171;
     }
   }
 }
